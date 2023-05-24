@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BesinineKat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Indie+Flower&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0px;}
+        .main-header{
+            background-color: #B73E3E;
+            padding: 14px;
+        }
+        .main-header__logo{
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        .main-nav{
+            display: inline-block;
+            text-align: right;
+            width: calc(100% - 185px);   
+        }
+        .main-nav__items{
+            list-style: none;
+        }
+        .main-nav__item{
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .main-nav__item::before{
+            content: '\2668';
+            color: #fff;
+        }
+        .main-nav__item a:hover, .main-nav__item:hover::before{
+            color: #EAEAEA;
+        }
+        .main-nav__item a{
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+        }
+        .main-nav__item--giris::before{
+            content: none;
+        }
+        .main-nav__item--giris a{
+            background-color:#fff;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            color: #ff5a08;
+            padding: 4px 16px;
+        }
+        .main-nav__item--giris a:hover{
+            background-color: #ff5a08;
+            color: #fff;
+        }
+        #showcase{
+            height: 350px;
+            background: url(mutfak.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #tanıtım{
+            text-align: center;
+        }
+        #tanıtım h2{
+            letter-spacing: 1px;
+            font-size: 30px;
+            font-family: 'Teko' , sans-serif;
+        }
+        #tanıtım h3{
+            font-size: 23px;
+            font-family: 'Teko' , sans-serif;
+        }
+        .tedarik p{
+            font-size: 20px;
+            font-family: 'Indie Flower' , cursive;
+        }
+        .col p{
+            font-family: 'Indie Flower' , cursive;
+            font-size: 20px;
+        }
+        .row{
+            margin-bottom: 30px;
+        }
+        .col{
+            display: inline-block;
+            width: 30%;
+            margin: 8px;
+            padding: 12px;
+        }
+        .col i{
+            color: #ff5a08;
+        }
+        .col-2{
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 250px;
+            background-color: #ff8b51;
+        }
+        .features-left{
+            background: url(baharatlar.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .features-right{
+            vertical-align: top;
+            padding: 20px;
+        }
+        .features-right p{
+            font-size: 18px;
+            font-family: 'Indie Flower' , cursive;
+        }
+        .features-right a{
+            text-decoration: none;
+            background-color: #ff5a08;
+            color:#fff;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            padding: 4px 16px;
+        }
+        .features-right a:hover{
+            background-color: #ff7129;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <a href="" class="main-header__logo">BesinineKat</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="">Baharatlar</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Doğal Çaylar</a>
+                </li>
+                <li class="main-nav__item main-nav__item--giris">
+                    <a href="">Giriş</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="showcase">
+            <div></div>
+        </section>
+        <section id="tanıtım">
+            <div class="row tedarik">
+                <h2>Nasıl tedarik edebilirim?</h2>
+                <p>İstediğiniz ürünleri sepete ekleyin.İletişim
+                    bilgilerini girin,ödeme yönteminizi seçin kolaylıkla
+                    sipariş vermiş olun.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="fa-solid fa-right-to-bracket fa-2x"></i>
+                        <h3>Üye Ol</h3>
+                        <p>Kampanyalı fırsatlardan anında haberdar
+                            olmak ve indirimlerden hemen faydalanmak
+                            için hemen sitemize üye olun.
+                        </p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-bowl-food fa-2x"></i>
+                    <h3>Plan Yap</h3>
+                    <p>Alışverişin dışında kendinize haftalık bir beslenme düzeni
+                        oluşturun,kaydedin.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <h3>Forum</h3>
+                    <p>Beslenme düzeninizden bahsedin.Beslenme ilgilenen diğer 
+                        kullanıcılarımızla sohbetler edin ve öğünlerini paylaşın.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <div class="row">
+                <div class="col-2 features-left"></div><div class="col-2 features-right">
+                    <h2>Sizler için özel üretilen, tat testlerinden geçen
+                        ürünlerimiz yemeklerinize tat katacak!
+                    </h2>
+                    <p>Beslenme uzmanlarımızla, beslenmenize verdiğiniz
+                        alakaya bizler de ortağız.
+                    </p>
+                    <a href="">Biz Kimiz</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main></main>
+
+
+</body>
+</html>
